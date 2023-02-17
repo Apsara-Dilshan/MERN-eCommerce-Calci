@@ -31,7 +31,7 @@ const data = {
       slug: 'red-hoodie',
       category: 'Jackets',
       image:
-        'http://images.squarespace-cdn.com/content/v1/5a8d4b3929f187a729abbe4d/1627576661210-4J6KRG10ZEPKNZ2LGMJA/unisex-heavy-blend-hoodie-red-front-6102d94cf31d5.jpg',
+        'https://api.reveri.io/api/image/27b97673-3eab-4e3a-ad1e-f598ca4609da',
       price: 150,
       countInStock: 7,
       brand: 'Nike',
@@ -44,7 +44,7 @@ const data = {
       slug: 'adidas-fit-pant',
       category: 'Pants',
       image:
-        'https://cdn.shopify.com/s/files/1/0692/4255/products/Black_TuxPants_800x.jpg?v=1646407013',
+        'https://apisap.fabindia.com/medias/10563238-1.jpg?context=bWFzdGVyfGltYWdlc3wxNDEzNjJ8aW1hZ2UvanBlZ3xoNjAvaGI1Lzg4MjIzMTUwMjQ0MTQvMTA1NjMyMzhfMS5qcGd8YzBkMDc1Y2NiZWFmZTM3OTQ0ZGM5M2ZhMGEzNDU0MDUwMmExOWVhZTNhZDlkODk0MzMyYzkwNDRkOTY3ZGI4MQ',
       price: 65,
       countInStock: 5,
       brand: 'Puma',
