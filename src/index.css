@@ -25,7 +25,7 @@ main {
   flex: 1;
 }
 .btn-primary {
-  background-color: #ee150e;
+  background-color: #f63d37;
   color: #000000;
 }
 .products {
@@ -34,7 +34,7 @@ main {
   justify-content: center;
 }
 .rating span {
-  color: #ee150e;
+  color: #f63d37;
 }
 
 .product {
