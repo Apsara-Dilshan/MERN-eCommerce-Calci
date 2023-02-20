@@ -70,7 +70,8 @@ main {
 }
 /* sidebar */
 .navbar-brand {
-  font-weight: bold;
+  font-weight: lighter;
+  font-size: 50px;
 }
 .side-navbar {
   width: 240px;
