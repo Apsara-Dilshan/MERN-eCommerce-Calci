@@ -73,6 +73,11 @@ main {
   font-weight: lighter;
   font-size: 50px;
 }
+.navbar-brand > .brand_span {
+  color: red;
+  text-transform: lowercase;
+  font-size: 15px;
+}
 .side-navbar {
   width: 240px;
   height: 100%;
@@ -93,4 +98,84 @@ main {
 }
 .text-bold {
   font-weight: bold;
+}
+.category .box-container .box {
+  height: 30rem;
+  flex: 1 1 40rem;
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.category .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.category .box-container .box:hover img {
+  transform: scale(1.1);
+}
+
+.category .box-container .content {
+  position: absolute;
+  bottom: 7rem;
+  left: 2rem;
+}
+
+.category .box-container .content span {
+  font-size: 2rem;
+  color: var(--orange);
+}
+
+.category .box-container .content h3 {
+  font-size: 3rem;
+  color: rgb(52, 51, 51);
+  text-transform: uppercase;
+  padding-top: 0.5rem;
+}
+.category .box-container .content h4 {
+  font-size: 2rem;
+  color: orange;
+  text-transform: uppercase;
+  padding-top: 0.5rem;
+}
+.shopnow {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background: var(--black-color);
+  color: var(--white-color);
+  font-size: 1.8rem;
+  padding: 0.9rem 3.5rem;
+  cursor: pointer;
+}
+.shopnow:hover {
+  background: var(--orange);
+  color: #fff;
+}
+tured .box-container .box .content .stars span {
+  font-size: 1.5rem;
+  color: var(--black-color);
+  font-weight: 300;
+}
+
+.featured .box-container .box .content p {
+  color: var(--black-color);
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.featured .box-container .box .content .price {
+  color: var(--orange);
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+  font-weight: bolder;
+}
+
+.featured .box-container .box .content .price span {
+  color: var(--black-color);
+  font-size: 1.5rem;
+  text-decoration: line-through;
+  font-weight: 300;
 }

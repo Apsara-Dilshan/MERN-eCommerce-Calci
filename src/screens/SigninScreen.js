@@ -29,6 +29,11 @@ export default function SigninScreen() {
       });
       ctxDispatch({ type: 'USER_SIGNIN', payload: data });
       localStorage.setItem('userInfo', JSON.stringify(data));
+      // const savedCart = JSON.parse(localStorage.getItem('cartItems'));
+      // if (savedCart) {
+      // const { item, quantity } = savedCart;
+      //   ctxDispatch({ type: 'CART_ADD_ITEM', payload: item });
+      // }
       navigate(redirect || '/');
     } catch (err) {
       toast.error(getError(err));

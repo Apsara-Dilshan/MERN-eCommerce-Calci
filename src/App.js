@@ -80,7 +80,9 @@ function App() {
               </Button>
 
               <LinkContainer to="/">
-                <Navbar.Brand>CALCI</Navbar.Brand>
+                <Navbar.Brand>
+                  CALCI<span className="brand_span"> #be your own label</span>
+                </Navbar.Brand>
               </LinkContainer>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
@@ -252,6 +254,7 @@ function App() {
         </main>
         <footer>
           <div className="text-center">All rights reserved</div>
+          <div className="text-center">Calci©2023</div>
         </footer>
       </div>
     </BrowserRouter>

@@ -7,6 +7,8 @@ import Product from '../components/Product';
 import { Helmet } from 'react-helmet-async';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
+import Category from './Category';
+import Featured from './Featured';
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -41,27 +43,33 @@ function HomeScreen() {
     fetchData();
   }, []);
   return (
-    <div>
-      <Helmet>
-        <title>Calci Clothing</title>
-      </Helmet>
-      <h1>Featured Products</h1>
-      <div className="products">
-        {loading ? (
-          <LoadingBox />
-        ) : error ? (
-          <MessageBox variant="danger">{error}</MessageBox>
-        ) : (
-          <Row>
-            {products.map((product) => (
-              <Col key={product.slug} sm={6} md={4} lg={3} className="mb-3">
-                <Product product={product}></Product>
-              </Col>
-            ))}
-          </Row>
-        )}
+    <>
+      <div>
+        <Helmet>
+          <title>Calci Clothing</title>
+        </Helmet>
+        <h1>Featured Products</h1>
+        <div className="products">
+          {loading ? (
+            <LoadingBox />
+          ) : error ? (
+            <MessageBox variant="danger">{error}</MessageBox>
+          ) : (
+            <Row>
+              {products.map((product) => (
+                <Col key={product.slug} sm={6} md={4} lg={3} className="mb-3">
+                  <Product product={product}></Product>
+                </Col>
+              ))}
+            </Row>
+          )}
+        </div>
       </div>
-    </div>
+      <div>
+        <Category />
+        <Featured />
+      </div>
+    </>
   );
 }
 export default HomeScreen;

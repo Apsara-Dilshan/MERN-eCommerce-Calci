@@ -61,7 +61,7 @@ export default function DashboardScreen() {
       ) : (
         <>
           <Row>
-            <Col md={4}>
+            <Col md={3}>
               <Card>
                 <Card.Body>
                   <Card.Title>
@@ -69,11 +69,11 @@ export default function DashboardScreen() {
                       ? summary.users[0].numUsers
                       : 0}
                   </Card.Title>
-                  <Card.Text> Users</Card.Text>
+                  <Card.Text> Total Users</Card.Text>
                 </Card.Body>
               </Card>
             </Col>
-            <Col md={4}>
+            <Col md={3}>
               <Card>
                 <Card.Body>
                   <Card.Title>
@@ -81,11 +81,23 @@ export default function DashboardScreen() {
                       ? summary.orders[0].numOrders
                       : 0}
                   </Card.Title>
-                  <Card.Text> Orders</Card.Text>
+                  <Card.Text> Total Orders of the Month</Card.Text>
                 </Card.Body>
               </Card>
             </Col>
-            <Col md={4}>
+            <Col md={3}>
+              <Card>
+                <Card.Body>
+                  <Card.Title>
+                    {summary.orders && summary.users[0]
+                      ? summary.orders[0].numOrders
+                      : 0}
+                  </Card.Title>
+                  <Card.Text> Total Orders of the week</Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={3}>
               <Card>
                 <Card.Body>
                   <Card.Title>
@@ -94,13 +106,13 @@ export default function DashboardScreen() {
                       ? summary.orders[0].totalSales.toFixed(2)
                       : 0}
                   </Card.Title>
-                  <Card.Text> Orders</Card.Text>
+                  <Card.Text> Total Sales of the Month</Card.Text>
                 </Card.Body>
               </Card>
             </Col>
           </Row>
           <div className="my-3">
-            <h2>Sales</h2>
+            <h2>Daily Sales</h2>
             {summary.dailyOrders.length === 0 ? (
               <MessageBox>No Sale</MessageBox>
             ) : (
@@ -117,7 +129,7 @@ export default function DashboardScreen() {
             )}
           </div>
           <div className="my-3">
-            <h2>Categories</h2>
+            <h2>Category wise product count</h2>
             {summary.productCategories.length === 0 ? (
               <MessageBox>No Category</MessageBox>
             ) : (
